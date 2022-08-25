@@ -1,2 +1,2 @@
-# AndrinMagRinder.github.io
+# Andrin
 Meine erste Webseite
