@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Start den ferfiggldkfjsdlkfjsdlökfjwsdökl" type="CompoundRunConfigurationType">
+    <toRun name="serve" type="js.build_tools.npm" />
+    <toRun name="Launch Chrome" type="ShConfigurationType" />
+    <method v="2" />
+  </configuration>
+</component>
