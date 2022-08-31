@@ -92,3 +92,7 @@ body{
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.test{
+    object-fit: cover;
+}
