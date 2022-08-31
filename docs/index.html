@@ -5,13 +5,17 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="import" href="./html/menubar.html">
+    <link rel="stylesheet" href="../css/menubar.css">
+
     <title>TOP G</title>
 </head>
 <body>
 <div class="navbar">
 
     <div class="dropdown">
+
         <button class="dropbtn">Menu
             <i class="fa fa-caret-down"></i>
         </button>
@@ -21,10 +25,37 @@
             <a href="#">Milu's Link</a>
         </div>
     </div>
+    <div class="dropdown">
+        <a class="dropbtn" id="left" href="../index.html">Home</a>
+    </div>
 </div>
+
 
 <h1 id="title">Andrin</h1>
 
+<header class="flex">
+    <button class="buttonStyling" onClick="window.location.reload();">Neues Bild</button>
+</header>
+<section class="flex">
+    <img src="">
+</section>
+<script>
+    const imageArray = [
+        "https://source.unsplash.com/random"
+    ];
+
+    const image = document.querySelector("img");
+    const button = document.querySelector("button");
+
+    window.onload = () => generateRandomPicture(imageArray);
+
+    button.addEventListener("click", () => generateRandomPicture(imageArray));
+
+    function generateRandomPicture(array){
+        let randomNum = Math.floor(Math.random() * array.length);
+        image.setAttribute("src", array[randomNum]);
+    }
+</script>
 
 
 
